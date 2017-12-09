@@ -25,6 +25,23 @@ nav a:hover {
   color: #f2f2f2;
 }
 
+.about-block {
+  display: inline-block;
+  min-height: 300px;
+  min-width: 280px;
+  padding: 30px;
+  vertical-align: top;
+  width: 35%;
+}
+
+.about-block h3 {
+  font-size: 28px;
+}
+
+.about-me {
+  margin-top: 10px;
+}
+
 .bar {
   background: #fff;
   height: 3px;
@@ -47,9 +64,39 @@ nav a:hover {
   transform: rotate(-45deg) translate(-9px, 6px);
 }
 
+.level-advanced {
+  width: 90%;
+}
+
+.level-familiar {
+  width: 40%;
+}
+
+.level-proficient {
+  width: 65%;
+}
+
+.progress-bar, .progress {
+  border-radius: 10px;
+  background: #dfdfdf;
+  height: 10px;
+}
+
+.progress {
+  background: #5a3100;
+}
+
+.skill p {
+  margin: 10px 0;
+}
+
 #about {
   background: #f5f5f5;
-  min-height: 50vh;
+}
+
+#about-container {
+  padding: 60px 0;
+  text-align: center;
 }
 
 #contact {
@@ -82,9 +129,31 @@ nav a:hover {
   min-height: 100vh;
 }
 
+#resume {
+  margin-top: 30px;
+}
+
+#resume a {
+  border-radius: 6px;
+  border: 1px #5a3100 solid;
+  color: #5a3100;
+  padding: 8px 18px;
+}
+
+#resume a:hover {
+  color: #fff;
+  background: #5a3100;
+}
+
 #work {
   background: #fff;
   min-height: 50vh;
+}
+
+@media screen and (max-width: 340px) {
+  .about-block {
+    padding: 30px 0;
+  }
 }
 
 @media screen and (max-width: 1000px) {
