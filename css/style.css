@@ -100,6 +100,38 @@ nav a:hover {
   width: 65%;
 }
 
+.logo {
+  display: inline-block;
+  height: 20px;
+  margin: 0 10px;
+  width: 20px;
+}
+
+.logo-github {
+  background: url('../img/logos/GitHub.svg') no-repeat;
+  background-size: 20px;
+}
+
+.logo-instagram {
+  background: url('../img/logos/Instagram.svg') no-repeat;
+  background-size: 20px;
+}
+
+.logo-linkedin {
+  background: url('../img/logos/LinkedIn.svg') no-repeat;
+  background-size: 20px;
+}
+
+.logo-mail {
+  background: url('../img/logos/Mail.svg') no-repeat;
+  background-size: 20px;
+}
+
+.logo-twitter {
+  background: url('../img/logos/Twitter.svg') no-repeat;
+  background-size: 20px;
+}
+
 .progress-bar, .progress {
   border-radius: 10px;
   background: #dfdfdf;
@@ -129,7 +161,13 @@ nav a:hover {
 
 #contact {
   background: rgba(0, 0, 0, 0.0);
-  min-height: 30vh;
+  color: #fff;
+  text-align: center;
+  padding: 60px 0;
+}
+
+#contact h3 {
+  font-size: 28px;
 }
 
 #container {
@@ -150,6 +188,10 @@ nav a:hover {
 
 #hamburger-icon {
   display: none;
+}
+
+#links {
+  padding: 20px 0;
 }
 
 #name {
