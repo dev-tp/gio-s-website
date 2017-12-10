@@ -50,6 +50,30 @@ nav a:hover {
   width: 30px;
 }
 
+.card {
+  box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1);
+  display: inline-block;
+  margin: 5px;
+  min-width: 280px;
+  vertical-align: top;
+  width: 20%;
+}
+
+.card-content {
+  min-height: 100px;
+}
+
+.card-content p {
+  padding: 10px 20px;
+}
+
+.card-image {
+  background: #111;
+  /* background: url('img/project.png') no-repeat; */
+  /* background-size: 100% 280px; */
+  height: 280px;
+}
+
 .change #bottom-bar {
   -webkit-transform: rotate(45deg) translate(-7px, -3px);
   transform: rotate(45deg) translate(-7px, -3px);
@@ -97,6 +121,10 @@ nav a:hover {
 #about-container {
   padding: 60px 0;
   text-align: center;
+}
+
+#card-container {
+  padding-bottom: 40px;
 }
 
 #contact {
@@ -147,12 +175,24 @@ nav a:hover {
 
 #work {
   background: #fff;
-  min-height: 50vh;
+  text-align: center;
+}
+
+#work h3 {
+  font-size: 28px;
+}
+
+#work-header {
+  padding: 20px 0;
 }
 
 @media screen and (max-width: 340px) {
   .about-block {
     padding: 30px 0;
+  }
+
+  .card {
+    margin: 5px 0;
   }
 }
 
