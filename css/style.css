@@ -8,8 +8,10 @@ a {
 }
 
 nav {
-  float: right;
   overflow: hidden;
+  position: absolute;
+  right: 0;
+  top: 0;
 }
 
 nav a {
@@ -195,8 +197,32 @@ nav a:hover {
 }
 
 #name {
+  -ms-flex-align: center;
+  -ms-flex-direction: column;
+  -ms-flex-pack: center;
+  -webkit-box-align: center;
+  -webkit-box-direction: normal;
+  -webkit-box-orient: vertical;
+  -webkit-box-pack: center;
+  align-items: center;
   background: rgba(0, 0, 0, 0.0);
+  color: #fff;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   min-height: 100vh;
+  text-align: center;
+}
+
+#name h1 {
+  font-size: 48px;
+}
+
+#name h2 {
+  font-size: 24px;
+  font-weight: 100;
 }
 
 #resume {
