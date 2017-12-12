@@ -225,6 +225,11 @@ nav a:hover {
   font-weight: 100;
 }
 
+#name-container {
+  animation: slideIn 1s ease 0.2s;
+  animation-fill-mode: both;
+}
+
 #resume {
   margin-top: 30px;
 }
@@ -293,5 +298,25 @@ nav a:hover {
     right: 20px;
     top: 15px;
     z-index: 2;
+  }
+}
+
+@-webkit-keyframes slideIn {
+  from {
+    -webkit-transform: translateY(50vh);
+    opacity: 0;
+  } to {
+    -webkit-transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(50vh);
+    opacity: 0;
+  } to {
+    transform: translateY(0);
+    opacity: 1;
   }
 }
