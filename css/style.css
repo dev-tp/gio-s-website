@@ -148,6 +148,26 @@ nav a:hover {
   margin: 10px 0;
 }
 
+.slide-in-left {
+  animation: slideInLeft 0.8s;
+  animation-fill-mode: both;
+}
+
+.slide-in-right {
+  animation: slideInRight 0.8s;
+  animation-fill-mode: both;
+}
+
+.slide-card-in-left {
+  animation: slideCardInLeft 0.8s;
+  animation-fill-mode: both;
+}
+
+.slide-card-in-right {
+  animation: slideCardInRight 0.8s;
+  animation-fill-mode: both;
+}
+
 #about {
   background: #f5f5f5;
 }
@@ -301,6 +321,26 @@ nav a:hover {
   }
 }
 
+@-webkit-keyframes slideCardInLeft {
+  from {
+    -webkit-transform: translate(100px, -100px);
+    opacity: 0;
+  } to {
+    -webkit-transform: translate(0, 0);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes slideCardInRight {
+  from {
+    -webkit-transform: translate(-100px, 100px);
+    opacity: 0;
+  } to {
+    -webkit-transform: translatex(0, 0);
+    opacity: 1;
+  }
+}
+
 @-webkit-keyframes slideIn {
   from {
     -webkit-transform: translateY(50vh);
@@ -311,12 +351,72 @@ nav a:hover {
   }
 }
 
+@-webkit-keyframes slideInLeft {
+  from {
+    -webkit-transform: translateX(-50vh);
+    opacity: 0;
+  } to {
+    -webkit-transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes slideInRight {
+  from {
+    -webkit-transform: translateX(50vh);
+    opacity: 0;
+  } to {
+    -webkit-transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideCardInLeft {
+  from {
+    transform: translate(100px, -100px);
+    opacity: 0;
+  } to {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideCardInRight {
+  from {
+    transform: translate(-100px, 100px);
+    opacity: 0;
+  } to {
+    transform: translatex(0, 0);
+    opacity: 1;
+  }
+}
+
 @keyframes slideIn {
   from {
     transform: translateY(50vh);
     opacity: 0;
   } to {
     transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-50vh);
+    opacity: 0;
+  } to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(50vh);
+    opacity: 0;
+  } to {
+    transform: translateX(0);
     opacity: 1;
   }
 }
